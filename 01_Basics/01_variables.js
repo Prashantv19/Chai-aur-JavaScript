@@ -17,4 +17,7 @@ console.table([accountId, accountEmail, accountPassword, accountCity, accountSta
 prefer not to use 'var'
 because of block scope , functional scope problem
 */
-
+/*
+prefer not to use 'var'
+because of block scope , functional scope problem
+*/
