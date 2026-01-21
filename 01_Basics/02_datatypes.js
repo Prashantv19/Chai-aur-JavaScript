@@ -27,10 +27,7 @@ let state;  // => undefined
     console.log(typeof null);   // type of null is object
     console.log(typeof undefined);  //and type of undefinmed is undefined
 
-    const fruits = ["Banana", "Orange", "Apple"];
-console.log(typeof fruits);         // Output: "object"
-console.log(Array.isArray(fruits)); // Output: true
-
+  
     
     
     
