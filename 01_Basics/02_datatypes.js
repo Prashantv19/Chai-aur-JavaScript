@@ -18,7 +18,7 @@ let state;  // => undefined
 //biginit
 //string => ""
 //boolean => true/false
-// null => standalone value  //intentionly not defined
+// null => standalone value  //intentionly empty, but defined hai
 // undefined => //variable decleared but value not defined 
 // symbol => unique
 //object => 
