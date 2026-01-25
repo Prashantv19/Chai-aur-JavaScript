@@ -21,3 +21,5 @@ console.log(hundreds.toLocaleString());  //10,00,000 This automatically uses ind
 console.log(hundreds.toLocaleString('en-IN'));  //10,00,000
 console.log(hundreds.toLocaleString('en-US')); //1,000,000
 
+
+//console par number ki properties padhna hai
