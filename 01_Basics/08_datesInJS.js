@@ -40,7 +40,9 @@ console.log(anotherDate.getMonth()); // 0 -> January
 console.log(anotherDate.getMonth() + 1); // 1 -> January
 console.log(anotherDate.getDay()); //1  -> Monday
 
- anotherDate.toLocaleString('default', {
-    weekday: "short", 
-    timeZone: ""
- })
+ 
+ console.log(anotherDate.toLocaleString('default', {
+    weekday: "long", 
+    
+ }));
+ 
