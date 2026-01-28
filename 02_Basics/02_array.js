@@ -23,7 +23,7 @@ const flatedArray = multiArray.flat(Infinity)  //   [2, 3, 4, 5, 6, 7, 4, 5, 6, 
 console.log(flatedArray);
 
 
-console.log(Array.isArray("Prashant"))
+console.log(Array.isArray("Prashant")) //Array - The built-in Array constructor/object in JavaScript. .isArray- A static method on the Array object
 console.log(Array.from("Prashant"))
 // console.log(Array.from(name: "Prashant")) //ye empty array return karega kyoki isko convert nhi kar pa rha hai, isko alag se batana padega ki key value pair ko convert karna hai.
 
