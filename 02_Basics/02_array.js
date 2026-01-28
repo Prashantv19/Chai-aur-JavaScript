@@ -23,3 +23,12 @@ const flatedArray = multiArray.flat(Infinity)  //   [2, 3, 4, 5, 6, 7, 4, 5, 6, 
 console.log(flatedArray);
 
 
+console.log(Array.isArray("Prashant"))
+console.log(Array.from("Prashant"))
+// console.log(Array.from(name: "Prashant")) //ye empty array return karega kyoki isko convert nhi kar pa rha hai, isko alag se batana padega ki key value pair ko convert karna hai.
+
+let score1 = 100
+let score2 = 200
+let score3 = 300
+
+console.log(Array.of(score1, score2, score3)) //[ 100, 200, 300 ]
