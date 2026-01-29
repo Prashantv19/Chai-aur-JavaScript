@@ -1,10 +1,11 @@
+//Comparision Operators
 console.log(2 > 1);
 console.log(2 >= 1);
 console.log(2 < 1);
 console.log(2 == 1);
 console.log(2 != 1);
 
-console.log("2" > 1);// problem starts here due to different data types
+console.log("2" > 1);// problem starts here due to comparision of different data types
 console.log("02" > 1);
 //iss tarah ke conversions ko hamesha avoid karna chahiye.
 console.log(null > 0);  // false
