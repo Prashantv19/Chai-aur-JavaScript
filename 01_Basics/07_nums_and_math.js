@@ -13,7 +13,7 @@ const otherNumber = 25.8966 //25.9
 // const otherNumber = 125.8966  //126
 // const otherNumber = 1125.8966   //1.13e+3  means: 1.13 × 10³
 
-// console.log(otherNumber.toPrecision(3));
+console.log(otherNumber.toPrecision(3));
 
 const hundreds = 1000000
 
