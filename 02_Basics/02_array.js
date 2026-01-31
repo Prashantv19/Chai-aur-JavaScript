@@ -5,10 +5,11 @@ const arr2 = ["superman","flash","batman"]
 // console.log(arr1);  //[ 'Thor', 'Ironman', 'Hulk', [ 'superman', 'flash', 'batman' ] ]
 
 // console.log(arr1[3][1]); //arr1 ke third element ka first element.
-//there are no differance between push and concat
-
+//differance between push and concat??
+// Push- array ke ander array daal deta hai
+//array ke baad array ko jod deta hai
 const arr3 = arr1.concat(arr2) // [ 'Thor', 'Ironman', 'Hulk', 'superman', 'flash', 'batman' ]
-//we have to strore concat function into a new variable.
+//we have to store concat function into a new variable.
 console.log(arr3);
 
 const newArray = [...arr1,...arr2] //spread operator, ye individual array ko spread kar deta hai ek new array me
