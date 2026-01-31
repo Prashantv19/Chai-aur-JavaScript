@@ -61,25 +61,56 @@ const users = [
         email: "Pv@gmail.com"
     }
 ]
-console.log(users[1].email);
-console.log(users[1].id);
+// console.log(users[1].email);
+// console.log(users[1].id);
 
 
-console.log(tinderUser); //{ id: '123abc', name: 'Prashant', isLoggedIn: false }
+// console.log(tinderUser); //{ id: '123abc', name: 'Prashant', isLoggedIn: false }
 
-console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] its data type is array
+// console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] its data type is array
 
 
-console.log(Object.values(tinderUser)); //[ '123abc', 'Prashant', false ]
+// console.log(Object.values(tinderUser)); //[ '123abc', 'Prashant', false ]
 
-console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Prashant' ], [ 'isLoggedIn', false ] ]
+// console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Prashant' ], [ 'isLoggedIn', false ] ]
 //every key : value ko array me convert kar deti hai
 
-console.log(tinderUser.hasOwnProperty('isLoggedIn')); //bollean me answer aayega. i.e.  true/false
+// console.log(tinderUser.hasOwnProperty('isLoggedIn')); //bollean me answer aayega. i.e.  true/false
 
 
+//--------------------------------------------------------------
 
+const course = {
+    courseName: "DBMS",
+    price: 999,
+    courseInstructor: "Hitesh"
+}
+// course.courseInstructor //agar yahi chij hume 4-5 bar likhna ho toh that is to hard so use this
 
+const {courseInstructor} = course
+console.log(courseInstructor);
+//ye concept React me kafi use hota hai
+const {courseInstructor: Instructor} = course  // Object destructure
+console.log(Instructor);
+//
 
+/*How API Rsponse Look Like */
 
+/*
+{
+    "courseName": "DBMS",
+    "site_admin": false,
+    "id": 11613311,
+    "price": 999,
+    "courseInstructor": "Hitesh"
+}
+*/
+// https://api.github.com/users/Prashantv19 
+//https://randomuser.me/api/
 
+/*
+note:-
+1. API response object and array kisi bhi form me mil sakta hai
+2. API response, JSON (Javascript  Object Notation) me likha rahta hai
+3. 
+ */
