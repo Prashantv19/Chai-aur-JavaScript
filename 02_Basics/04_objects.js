@@ -3,7 +3,7 @@
 const tinderUser = new Object() //singleton object
 //VS,[the only differance is singleton and non-singleton, not any differance in output]
 // const tinderUser = {} //non-singleton object
-console.log(tinderUser);
+// console.log(tinderUser);
 
 tinderUser.id = "123abc"
 tinderUser.name = "Prashant"
@@ -33,6 +33,53 @@ const obj2 ={3: "C", 4: "D"}
 
 // const obj3 = {obj1 ,obj2}  //{ obj1: { '1': 'A', '2': 'B' }, obj2: { '3': 'C', '4': 'D' } }
 
-const obj3 = Object.assign({}, obj1,obj2) //{ '1': 'A', '2': 'B', '3': 'C', '4': 'D' }
-//{}-> this is an optional parameter to 100% confirm this type of O/P
-console.log(obj3);
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign
+// const obj3 = Object.assign({}, obj1,obj2) //{ '1': 'A', '2': 'B', '3': 'C', '4': 'D' }
+//{}-> this is an optional parameter to 100% garantee this type of O/P
+//const obj3 = Object.assign({},obj1, obj2, obj4) //{} -> target objest, and other are source object.thats it.
+
+const obj3 = {...obj1,...obj2}  //90% yahi use karenge, easy simple, short
+// console.log(obj3);
+
+// Array of Object
+
+const users = [
+    {
+        id: 1,
+        email: "Pv@gmail.com",
+    },
+    {
+        id: 1,
+        email: "Pv@gmail.com",
+    },
+    {
+        id: 1,
+        email: "Pv@gmail.com",
+    },
+    {
+        id: 1,
+        email: "Pv@gmail.com"
+    }
+]
+console.log(users[1].email);
+console.log(users[1].id);
+
+
+console.log(tinderUser); //{ id: '123abc', name: 'Prashant', isLoggedIn: false }
+
+console.log(Object.keys(tinderUser)); //[ 'id', 'name', 'isLoggedIn' ] its data type is array
+
+
+console.log(Object.values(tinderUser)); //[ '123abc', 'Prashant', false ]
+
+console.log(Object.entries(tinderUser)); //[ [ 'id', '123abc' ], [ 'name', 'Prashant' ], [ 'isLoggedIn', false ] ]
+//every key : value ko array me convert kar deti hai
+
+console.log(tinderUser.hasOwnProperty('isLoggedIn')); //bollean me answer aayega. i.e.  true/false
+
+
+
+
+
+
+
