@@ -78,7 +78,7 @@ const users = [
 // console.log(tinderUser.hasOwnProperty('isLoggedIn')); //bollean me answer aayega. i.e.  true/false
 
 
-//--------------------------------------------------------------
+//------------------------------Next Lecture--------------------------------
 
 const course = {
     courseName: "DBMS",

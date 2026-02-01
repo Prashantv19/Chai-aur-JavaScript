@@ -1,4 +1,5 @@
-/*Numbers And Math*/
+/*Numbers*/
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
 //_____________________________________________________________
 
 255; // two-hundred and fifty-five
