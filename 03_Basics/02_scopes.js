@@ -26,7 +26,7 @@ if (true){
 
 
  //---------------------------new video-------------------------
- function one(){
+ /*function one(){
     const username = "Naveen"
     function two(){
         const website = "YouTube"
@@ -37,3 +37,34 @@ if (true){
     two()
  }
  one()
+ */
+/*Note:- child function parent function ke variable ko access kar pate hai, but parent finction child function ke variable ko access nhi kar pate hai */
+
+/*if (true){
+    const username = "Prashant"
+    if (username === "Prashant"){
+        const website = " youtube"
+        console.log(username+website);
+        
+    }
+    // console.log(website); //ReferenceError: website is not defined
+    
+}*/
+// console.log(username); //ReferenceError: username is not defined
+//after removing both this is running --Prashant youtube
+
+
+//---------------Interesting Example.---------------------------
+
+console.log(addone(5)) //isko function ke pahle likhenge tab bhi function execute ho jayega but
+function addone(num){
+    return num +1
+}
+
+
+//aise bhi function dekhane ko milega
+//concept: hoisting in javascript
+addTwo(5) //isko function ke pahle likhenge toh ye error dega - ReferenceError: Cannot access 'addTwo' before initialization
+const addTwo = function(num){
+    return num +2
+}
