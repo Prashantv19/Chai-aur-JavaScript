@@ -1,25 +1,40 @@
 // if
-const isUserloggedIn = true
-const temperature = 41
+// if(3!=2){
+//     console.log("this line of code will run, because condition is true");
+// }
 
-// if ( temperature === 40 ){
+// if(3=2){
+//     console.log("this line of code will not run, because condition is false");
+// }
+// const isUserloggedIn = true
+// const temperature = 41
+//--------------------------------------------------------------
+
+// if ( temperature === 40 ){   //O/P-> //temperature is greater than 50
 //     console.log("less than 50");
 // } else {
 //     console.log("temperature is greater than 50");
 // }
+//--------------------------------------------------------------
 
 // console.log("Execute");
+//--------------------------------------------------------------
+
+//comparision operators  
 // <, >, <=, >=, ==, !=, ===, !==
+//--------------------------------------------------------------
 
 // const score = 200
 
 // if (score > 100) {
 //     let power = "fly"
-//     console.log(`User power: ${power}`);
+//     var power = "fly"  //this is global scope variable
+//     console.log(`User power: ${power}`); //User Power: fly 
 // }
 
-// console.log(`User power: ${power}`);
+// console.log(`User power: ${power}`);  //Error: power is not defind, because it is executing out of scope.
 
+ 
 
 // const balance = 1000
 
