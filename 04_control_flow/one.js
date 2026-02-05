@@ -36,7 +36,7 @@
 //--------------------------------------------------------------
 
 const balance = 1000
-implicite scope
+// implicite scope
 if (balance > 500) console.log("test"),console.log("test2"); //not recommended
 
 if (balance < 500) {
