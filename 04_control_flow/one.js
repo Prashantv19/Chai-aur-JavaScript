@@ -36,27 +36,31 @@
 //--------------------------------------------------------------
 
 const balance = 1000
-// implicite scope
-if (balance > 500) console.log("test"),console.log("test2"); //not recommended
+// implicite scope- isme hum ek sath multiple line likha sakte hai.
+// if (balance > 500) console.log("test"),console.log("test2"); //not recommended
+//--------------------------------------------------------------
 
-if (balance < 500) {
-    console.log("less than 500");
-} else if (balance < 750) {
-    console.log("less than 750");
+//nested if-else if-else if-if
+// if (balance < 500) {
+//     console.log("less than 500");
+// } else if (balance < 750) {
+//     console.log("less than 750");
     
-} else if (balance < 900) {
-    console.log("less than 750");
+// } else if (balance < 900) {
+//     console.log("less than 750");
     
-} else {
-    console.log("less than 1200");
+// } else {
+//     console.log("less than 1200");
 
-}
-
+// }
+//--------------------------------------------------------------
+// real life senario
 const userLoggedIn = true
 const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
+//AND, OR operators
 if (userLoggedIn && debitCard && 2==3) {
     console.log("Allow to buy course");
 }
@@ -64,3 +68,4 @@ if (userLoggedIn && debitCard && 2==3) {
 if (loggedInFromGoogle || loggedInFromEmail) {
     console.log("User logged in");
 }
+//--------------------------------------------------------------
