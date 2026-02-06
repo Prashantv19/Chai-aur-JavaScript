@@ -37,7 +37,8 @@
 
 const balance = 1000
 // implicite scope- isme hum ek sath multiple line likha sakte hai.
-// if (balance > 500) console.log("test"),console.log("test2"); //not recommended
+// if (balance > 500) console.log("test") //it is okey but
+// if (balance > 500) console.log("test"),console.log("test2"); //it is not recommended
 //--------------------------------------------------------------
 
 //nested if-else if-else if-if
@@ -60,7 +61,9 @@ const debitCard = true
 const loggedInFromGoogle = false
 const loggedInFromEmail = true
 
-//AND, OR operators
+//Logical operators
+//AND - Both(all) condition should be true
+//OR - Atleast one condition should be true
 if (userLoggedIn && debitCard && 2==3) {
     console.log("Allow to buy course");
 }
