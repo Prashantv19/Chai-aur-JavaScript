@@ -6,7 +6,7 @@ const coding = ['js', 'rb', "java","cpp", "python"]
 // coding.forEach( function (variable name) {
 //     //what we want to do
 // })
-
+//---------------------------------------------------
 coding.forEach( function (val) {
     // console.log(val);
     
@@ -17,11 +17,13 @@ coding.forEach(  (val) => {
     // console.log(val);
     
 })
+//---------------------------------------------------
 
 //another way
 function printMe (item){
     // console.log(item);
 }
+//---------------------------------------------------
 
 // coding.forEach(printMe);
 
@@ -29,6 +31,7 @@ function printMe (item){
 coding.forEach((item, index, arr)=> {
     // console.log(item, index, arr);
 })
+//---------------------------------------------------
 
 const mycoding = [
     {
@@ -52,6 +55,8 @@ const mycoding = [
         langFileName: "js"
     },
 ]
+//---------------------------------------------------
+
 mycoding.forEach((item)=>{
     console.log(item.langName);
     console.log(item.langFileName);
