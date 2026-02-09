@@ -46,7 +46,11 @@ const mycoding = [
     {
         langName: "JavaScript",
         langFileName: "js"
-    }
+    },
+    {
+        langName: "JavaScript",
+        langFileName: "js"
+    },
 ]
 mycoding.forEach((item)=>{
     console.log(item.langName);
