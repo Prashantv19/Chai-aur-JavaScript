@@ -47,9 +47,12 @@ const books = [
     { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
   ];
 let userBooks = books.filter( (bk) => bk.genre === 'History')
+// console.log(userBooks);
+
+userBooks = books.filter( (bk)=> {
+    return bk.publish >= 1995 && bk.genre === "History"
+})
 console.log(userBooks);
 
-userBooks = books.filter( (bk)=> {return bk.publish >= 2002})
-console.log(userBooks);
-
-//note: if we use { } then we have to use return 
+//note: if we use { } then we have to use return explicitly
+// agar koi condition true nhi hui then empty array aayega
