@@ -1,11 +1,12 @@
 //Truthy Value - hum maan lete hai ki ye true value hai.
 //Falsy Value - hum man lete hai ki ye False value hai
-// const userEmail = "p@gmail.com"  //Got User Email, because hum man lete hai ki true hai
 
-// const userEmail = ""                //dont have User Email, because hum man lete hai ki false hai
+// const userEmail = "prashant@gmail.com"  //Got User Email, because hum man lete hai ki true hai
+
+// const userEmail = ""            //dont have User Email, because hum man lete hai ki false hai
 
 //but
-const userEmail = []         //Got User Email, ??
+const userEmail = []         //Got User Email, just because [] comes under truthy values thats why its happening
  
 if (userEmail) {
     console.log("Got User Email");
@@ -16,7 +17,7 @@ if (userEmail) {
 //--------------------------------------------------------------
 
 /*falsy values */
-/*
+/* 
 false
 0
 -0
@@ -52,9 +53,10 @@ const obj ={}
 if (Object.keys(obj).length === 0) {
     console.log("Obj is empty");
 }
-
 // Object.keys(obj) -> it returns an empty Array
+
 //--------------------------------------------------------------
+
 // Nullish Coalescing Operator (??): null, undefined
 /*
 ?? returns the right-hand value only if the left-hand value is 'null' or 'undefined'.
@@ -80,10 +82,13 @@ let val1
 // val1 = 5??10   //5
 // val1 = null ?? 10   //10
 // val1 = undefined ?? 15   //15
-val1 = null ?? 10 ?? 20   //10     
 
+
+val1 = null ?? 10 ?? 20   //10     
 // console.log(val1);
+
 //--------------------------------------------------------------
+
 //ternary  operator
 //Syntax-> condition ? true : false
 
