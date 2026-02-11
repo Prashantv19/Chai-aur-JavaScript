@@ -1,14 +1,22 @@
 /*For Loop */
+
 // for(initialize variable; condition check; index++){print statement}
-//Shortcut - CTRL+D for multicorsur
+
+//Shortcut - (CTRL+D after double click on any word) for multicorsur
+
+//--------------------------------------------------------------
+
 for (let i = 0; i <=10; i++) {
     const element = i;
     // console.log(element);
 }
-// console.log(element);   //ReferenceError: element is not defined,and it should be.
+
+// console.log(element);   //ReferenceError: element is not defined,and it should be, because it is define in block scope not globle scope.
 // console.log(i);   //ReferenceError: i is not defined
+
 //--------------------------------------------------------------
-//including control flows
+
+//including control flows into loops
 for (let i = 0; i <=10; i++) {
     const element = i;
     if (element == 5) {
@@ -54,7 +62,9 @@ for (let index = 1; index <=20; index++) {
     
 }console.log("break ke baad sidhe loop ke bahar aa gya");
 //--------------------------------------------------------------
+
 //continue
+
 for (let index = 1; index <=20; index++) {
     if (index == 5) {
         console.log(`Detected 5`);
