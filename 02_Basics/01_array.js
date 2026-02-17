@@ -10,6 +10,7 @@ console.log(myArr[1]); //0
 // const myHeros = ["Ironman","SpyderMan","Baalveer"]
 /*-----------------------------------------*/
 
+//another method to define an array
 const myArr2 = new Array(1,2,3,4,5)
 console.log(myArr2.length); //5
 console.log(myArr2[1]); //2

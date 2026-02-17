@@ -5,9 +5,13 @@ const arr2 = ["superman","flash","batman"]
 // console.log(arr1);  //[ 'Thor', 'Ironman', 'Hulk', [ 'superman', 'flash', 'batman' ] ]
 
 // console.log(arr1[3][1]); //arr1 ke third element ka first element.
+
 //differance between push and concat??
+
 // Push- array ke ander array daal deta hai
-//array ke baad array ko jod deta hai
+
+//concat- array ke baad array ko jod deta hai
+
 const arr3 = arr1.concat(arr2) // [ 'Thor', 'Ironman', 'Hulk', 'superman', 'flash', 'batman' ]
 //we have to store concat function into a new variable.
 console.log(arr3);
