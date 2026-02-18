@@ -76,9 +76,9 @@ index of 100
 */
 
 const marks = [45, 67, 89, 23, 67]
-console.log(marks.includes(89)); //true
-console.log(marks.indexOf(67)); //1
-console.log(marks.indexOf(80)); //-1
+// console.log(marks.includes(89)); //true
+// console.log(marks.indexOf(67)); //1
+// console.log(marks.indexOf(80)); //-1
 /*
 📌Important rule
 
@@ -94,4 +94,11 @@ Q7
 Search for a value in array using loop (not includes).
 If found → print index → stop loop using break.
 */
+const dateArray = [45, 67, 89, 23, 67]
+for (let i = 0; i < dateArray.length; i++) {
+    if (dateArray[i]==89) {
+        console.log(`index ${i}`);
+        break
+    }
+}
 
