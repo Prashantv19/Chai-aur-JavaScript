@@ -8,7 +8,6 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <div class="parent">
-
         <!-- this is a comment -->
         <div class="day">Monday</div>
         <div class="day">Tuesday</div>
@@ -18,9 +17,27 @@
     
 </body>
 <script>
-    const parent = document.querySelector('.parent')
-    console.log(parent);
-    console.log(parent.children);
-    console.log(parent.children[1].innerHTML);
+    const parent = document.querySelector(".parent")
+    // console.log(parent);
+    // console.log(parent.children);  //it gives HTML Collection
+    // console.log(parent.children[1].innerHTML);  //we can use array property but this is not array.
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(
+    //      parent.children[i].innerHTML);
+        
+    // }
+
+    // parent.children[1].style.color = "red"
+    // console.log(parent.firstElementChild);
+
+    // parent.children[2].style.color = "pink"
+    // console.log(parent.firstElementChild);
+    
+    const dayOne = document.querySelector('.day')
+    console.log(dayOne);
+    console.log(dayOne.parentElement);
+    
+    
 </script>
 </html>
