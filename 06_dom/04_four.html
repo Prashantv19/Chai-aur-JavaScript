@@ -1,11 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chai Aur Code</title>
+  </head>
+  <body style="background-color: black; color: white">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    /*we can do this way but this is not optimised way*/
+    /*Yha hame puri tree traverce karna pad rha hai*/
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`
+      document.querySelector('.language').appendChild(li);
+    }
+    addLanguage("Java");
+    addLanguage("Python");
+    addLanguage("C++");
+    addLanguage("PHP");
+    addLanguage("Ruby");
 
-</body>
-</html> 
+    /*Optimised way*/
+    function addOptilanguage(langName){
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName))
+      document.querySelector('.language').appendChild(li)   //.language -> class name
+    }
+    addOptilanguage('HTML');
+
+    /*EDIT the value*/
+    const secondlang = document.querySelector("li:nth-child(2)")
+    /*1st way*/
+    // secondlang.innerHTML = "POGO"  //not recommended way
+
+    /*2nd way*/
+    const newLi = document.createElement('li')
+    newLi.textContent = "mojo"     //java -> mojo
+    secondlang.replaceWith(newLi)
+
+    /*3rd way*/
+    const firstlang = document.querySelector("li:first-child")
+    firstlang.outerHTML= '<li>TypeScript</li>'  //changes the Javascript -> TypeScript
+
+
+    /*Remove the value*/
+    const lastlang  = document.querySelector('li:last-child')
+    lastlang.remove()  //removes 'HTML'
+  </script>
+</html>
